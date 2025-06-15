@@ -42,7 +42,7 @@ All steps include clear instructions, screenshots (where applicable), and align 
 3. Choose a `.txt` file (e.g., `welcome.txt`)
 4. Click **Upload**
 
-
+<img width="929" alt="Image" src="https://github.com/user-attachments/assets/dfbcaf47-2e61-442d-845b-acb83fcc0723" />
 ---
 
 ## 3️⃣ Enable Versioning
@@ -59,11 +59,37 @@ All steps include clear instructions, screenshots (where applicable), and align 
 <img width="941" alt="Image" src="https://github.com/user-attachments/assets/42eb06c8-c5ca-46ed-afbb-9a93817e4d2b" />
 
 ---
+## ✅ Task 4: Implement Lifecycle Policy in Amazon S3
 
-## 4️⃣ Configure Bucket Policy for Public Access
+This section documents the configuration of a lifecycle policy for the S3 bucket `gatogrowfast-s3-demo`. The goal is to transition objects to a lower-cost storage class, demonstrating cost optimization in S3 storage management.
+## 🪜 Steps to Create a Lifecycle Policy
+
+1. Go to the **AWS S3 Console**
+2. Select the bucket `gatogrowfast-s3-demo`
+3. Click the **Management** tab
+4. Under **Lifecycle rules**, click **Create lifecycle rule**
+
+---
+
+### ✏️ Rule Configuration
+
+- **Rule name**: `TransitionToStandardIA`
+- **Scope**: Apply to **all objects**
+- **Rule action**:  
+  ✅ Transition current versions of objects
+
+---
+
+### 🛠️ Transition Settings
+
+- Transition to: **Standard-IA (Infrequent Access)**
+- Days after object creation: `30`
+<img width="938" alt="Image" src="https://github.com/user-attachments/assets/393f40cd-443f-45b3-a84c-36c28d0a1f07" />
+<img width="946" alt="Image" src="https://github.com/user-attachments/assets/11fc9f1a-734a-4d90-95bb-59ae525ad249" />
+
+## 5 Configure Bucket Policy for Public Access
 <img width="935" alt="Image" src="https://github.com/user-attachments/assets/bb24a543-afa9-416f-911f-8780a61dd48a" />
 <img width="959" alt="Image" src="https://github.com/user-attachments/assets/1c92817f-fb40-48de-a62e-cfd7ce682d39" />
-<img width="946" alt="Image" src="https://github.com/user-attachments/assets/11fc9f1a-734a-4d90-95bb-59ae525ad249" />
 1. Go to **Permissions > Bucket Policy**
 2. Add the following JSON policy to allow public read access:
 
@@ -80,3 +106,6 @@ All steps include clear instructions, screenshots (where applicable), and align 
     }
   ]
 }
+
+
+---
