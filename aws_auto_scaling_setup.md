@@ -21,8 +21,8 @@
      systemctl enable httpd
      echo "Hello from Launch Template" > /var/www/html/index.html
      ```
-
 6. Click **Create launch template** to save.
+<img width="938" height="453" alt="Image" src="https://github.com/user-attachments/assets/1a874bb2-daea-4bee-a955-922d82d924b5" />
 
 ## ✅ Task 2: Set Up Auto Scaling Group
 1. Go to **EC2 > Auto Scaling Groups**.
@@ -37,7 +37,8 @@
      - Minimum: `1`
      - Maximum: `3`
 5. Click **Next** and **Create Auto Scaling Group**.
-
+<img width="942" height="430" alt="Image" src="https://github.com/user-attachments/assets/e4ca208b-0493-4d4f-b62e-5f68fe3003fe" />
+<img width="950" height="381" alt="Image" src="https://github.com/user-attachments/assets/4864c0a6-d229-4fba-a58e-2313b1ecee62" />
 ## ✅ Task 3: Configure Scaling Policies
 1. After creating the group, select your **Auto Scaling group**.
 2. Go to the **Automatic scaling** tab.
