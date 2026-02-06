@@ -13,7 +13,9 @@ This project is not just about writing a script; it’s about understanding how 
 Develop a shell script that automates the setup of:
 - **AWS EC2 instances** for computational tasks.
 - **AWS S3 buckets** for data storage.
-
+<img width="956" alt="Image" src="https://github.com/user-attachments/assets/89dcd980-1677-4927-912f-bfec78fbae7d" />
+<img width="959" alt="Image" src="https://github.com/user-attachments/assets/266dab30-416a-4a0a-ae59-36fc5f048b8d" />
+<img width="948" height="512" alt="Image" src="https://github.com/user-attachments/assets/c9007cee-2fd6-4588-b46d-ea0fe786024b" />
 The script should be flexible, secure, and robust, utilizing the following five critical shell scripting concepts:
 
 1. **Functions** – Modularize tasks for clarity and reusability.
